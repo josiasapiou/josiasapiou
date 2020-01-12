@@ -1,0 +1,125 @@
+<form name="budbreak2T3">
+  <form class="form-popup" id="myForm">
+  <fieldset>
+
+  <!-- Form Name -->
+  <legend>Cell data</legend>
+
+  <!-- Text input-->
+  <div class="form-group">
+    <label class="col-md-4 control-label" for="textinput">Name:</label>
+    <div class="col-md-4">
+    <input id="textinput" name="Name" type="text" placeholder="" class="form-control input-md" required="">
+    <span class="help-block">Enter your Name</span>
+    </div>
+  </div>
+
+  <!-- Text input-->
+  <div class="form-group">
+    <label class="col-md-4 control-label" for="textinput">Date:</label>
+    <div class="col-md-4">
+    <input id="textinput" name="Date" type="text" placeholder="placeholder" class="form-control input-md" required="">
+    <span class="help-block">mm/dd/2020</span>
+    </div>
+  </div>
+  <div class="form-group">
+    <label class="col-md-4 control-label" for="textinput">Budbreak?</label>
+    <div class="col-md-4">
+    <input id="textinput" name="BB" type="text" placeholder="placeholder" class="form-control input-md" required="">
+    <span class="help-block">y/n</span>
+    </div>
+  </div>
+  <div class="form-group">
+    <label class="col-md-4 control-label" for="textinput">Cell#</label>
+    <div class="col-md-4">
+    <input id="textinput" name="Cell Number" type="text" placeholder="placeholder" class="form-control input-md" required="">
+    <span class="help-block">1-50</span>
+    </div>
+  </div>
+  <div class="form-group">
+    <label class="col-md-4 control-label" for="textinput">Additonal Commentary</label>
+    <div class="col-md-4">
+    <input id="textinput" name="Comments" type="text" placeholder="placeholder" class="form-control input-md" required="">
+    <span class="help-block">comments</span>
+    </div>
+  </div>
+
+
+</form>
+
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycby6njXYyTgFGh77xNaEKQ6W1NAbpbfig5dYUih10ubVXj9cWexX/exec'
+  const form = document.forms['budbreak2T3']
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => console.log('Success!', response))
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+<h1>Tray Layout</h1>
+<table>
+<tbody>
+<tr>
+<td>1&nbsp;</td>
+<td>2&nbsp;</td>
+<td>3&nbsp;</td>
+<td>4&nbsp;</td>
+<td>5&nbsp;</td>
+<td>6&nbsp;</td>
+<td>7&nbsp;</td>
+<td>8&nbsp;</td>
+<td>9&nbsp;</td>
+<td>10&nbsp;</td>
+</tr>
+<tr>
+<td>11&nbsp;</td>
+<td>12&nbsp;</td>
+<td>13&nbsp;</td>
+<td>14&nbsp;</td>
+<td>15&nbsp;</td>
+<td>16&nbsp;</td>
+<td>17&nbsp;</td>
+<td>18&nbsp;</td>
+<td>19&nbsp;</td>
+<td>20&nbsp;</td>
+</tr>
+<tr>
+<td>21&nbsp;</td>
+<td>22&nbsp;</td>
+<td>23&nbsp;</td>
+<td>24&nbsp;</td>
+<td>25&nbsp;</td>
+<td>26&nbsp;</td>
+<td>27&nbsp;</td>
+<td>28&nbsp;</td>
+<td>29&nbsp;</td>
+<td>30&nbsp;</td>
+</tr>
+<tr>
+<td>31&nbsp;</td>
+<td>32&nbsp;</td>
+<td>33&nbsp;</td>
+<td>34&nbsp;</td>
+<td>35&nbsp;</td>
+<td>36&nbsp;</td>
+<td>37&nbsp;</td>
+<td>38&nbsp;</td>
+<td>39&nbsp;</td>
+<td>40&nbsp;</td>
+</tr>
+<tr>
+<td>41&nbsp;</td>
+<td>42&nbsp;</td>
+<td>43&nbsp;</td>
+<td>44&nbsp;</td>
+<td>45&nbsp;</td>
+<td>46&nbsp;</td>
+<td>47&nbsp;</td>
+<td>48&nbsp;</td>
+<td>49&nbsp;</td>
+<td>50&nbsp;</td>
+</tr>
+</tbody>
+</table>
