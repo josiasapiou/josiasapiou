@@ -1,4 +1,5 @@
 <form name="budbreak2T1">
+<h1> Tray 1</h1>
   <form class="form-popup" id="myForm">
   <fieldset>
 
@@ -9,8 +10,8 @@
   <div class="form-group">
     <label class="col-md-4 control-label" for="textinput">Name:</label>
     <div class="col-md-4">
-    <input id="textinput" name="Name" type="text" placeholder="" class="form-control input-md" required="">
-    <span class="help-block">Enter your Name</span>
+    <input id="textinput" name="Name" type="text" placeholder="Enter your Name" class="form-control input-md" required="">
+    <span class="help-block"></span>
     </div>
   </div>
 
@@ -18,33 +19,33 @@
   <div class="form-group">
     <label class="col-md-4 control-label" for="textinput">Date:</label>
     <div class="col-md-4">
-    <input id="textinput" name="Date" type="text" placeholder="placeholder" class="form-control input-md" required="">
-    <span class="help-block">mm/dd/2020</span>
+    <input id="textinput" name="Date" type="text" placeholder="mm/dd/2020" class="form-control input-md" required="">
+
     </div>
   </div>
   <div class="form-group">
     <label class="col-md-4 control-label" for="textinput">Budbreak?</label>
     <div class="col-md-4">
-    <input id="textinput" name="BB" type="text" placeholder="placeholder" class="form-control input-md" required="">
-    <span class="help-block">y/n</span>
+    <input id="textinput" name="BB" type="text" placeholder="y/n" class="form-control input-md" required="">
+    <span class="help-block"></span>
     </div>
   </div>
   <div class="form-group">
     <label class="col-md-4 control-label" for="textinput">Cell#</label>
     <div class="col-md-4">
-    <input id="textinput" name="Cell Number" type="text" placeholder="placeholder" class="form-control input-md" required="">
-    <span class="help-block">1-50</span>
+    <input id="textinput" name="Cell Number" type="text" placeholder="#" class="form-control input-md" required="">
     </div>
   </div>
   <div class="form-group">
     <label class="col-md-4 control-label" for="textinput">Additonal Commentary</label>
     <div class="col-md-4">
-    <input id="textinput" name="Comments" type="text" placeholder="placeholder" class="form-control input-md" required="">
-    <span class="help-block">comments</span>
+    <input id="textinput" name="Comments" type="text" placeholder="text" class="form-control input-md" required="">
+    <span class="help-block"></span>
     </div>
   </div>
 
-
+  <button type="submit">Submit</button>
+  <h3>Please refresh page after submitting,</h3>
 </form>
 
 <script>
@@ -57,6 +58,8 @@
       .then(response => console.log('Success!', response))
       .catch(error => console.error('Error!', error.message))
   })
+  document.getElementById("budbreak2T1").onsubmit = function(){
+}
 </script>
 <h1>Tray Layout</h1>
 <table>
