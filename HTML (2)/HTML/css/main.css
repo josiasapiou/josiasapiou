@@ -1,0 +1,48 @@
+body {
+    background-color: rgb(128,128,128);
+    font-family: sans-serif;
+    text-align: center;
+    margin-left: 0;
+}
+
+.container ul li:nth-child(1) img {
+    width: 10%;
+}
+.container ul li:nth-child(2) img {
+    width: 14%;
+}
+.container ul li:nth-child(3) img {
+    width: 13%;
+}
+.container ul {
+    list-style-type: none;
+}
+.balanceAssessment {
+    background: rgb(25,25,25);
+    width: calc(95%);
+    display: block;
+    color: rgb(128,128,128);
+    border-radius: 20px;
+    padding: .5em;
+    text-decoration: none;
+    margin-bottom: 1em;
+}
+.symptomsSurvey {
+    background: rgb(25,25,25);
+    width: calc(95%);
+    display: block;
+    color: rgb(128,128,128);
+    border-radius: 20px;
+    padding: .5em;
+    text-decoration: none;
+    margin-bottom: .6em;
+}
+.viewData {
+    background: rgb(25,25,25);
+    width: calc(95%);
+    display: block;
+    color: rgb(128,128,128);
+    border-radius: 20px;
+    padding: .5em;
+    text-decoration: none;
+}

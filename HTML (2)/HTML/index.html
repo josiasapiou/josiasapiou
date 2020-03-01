@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Concussion Balance Assessment</title>
+</head>
+<body>
+    <div class=header>
+        <h1>Concussion Balance Assessment</h1>
+    </div> 
+    <div class=container>
+        <ul class=list>
+            <li>
+                <img src="images/person.JPG" alt="person" class=balanceDude>
+                <br>
+                <a href="assessment.html" class=balanceAssessment>Balance Assessment</a>
+            </li>
+            <li>
+                <img src="images/survey.jpg" alt="survey" class=survey>
+                <br>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSdiL4k4D-6W9jnwkxusNLKUviAaN9p8qtV0FNWSWSgU_ScOWg/viewform?usp=pp_url" class=symptomsSurvey>Concussion Symptoms Survey</a>
+            </li>
+            <li>
+                <img src="images/chart.jpg" alt="chart" class=chart>
+                <br>
+                <a href="#" class=viewData>View Data</a>
+            </li>
+        </ul>
+    </div>
+    <link rel="stylesheet" href="css/main.css">
+    <script>
+
+        var balanceDude = document.getElementById('balanceDude');
+        balanceDude.addEventListener('click', function(e){
+            allert('hello');
+        });
+
+        
+
+    </script>
+</body>
+</html>

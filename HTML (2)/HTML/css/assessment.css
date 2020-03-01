@@ -1,0 +1,17 @@
+body {
+    background-color: rgb(128,128,128);
+    font-family: sans-serif;
+    text-align: center;
+}
+.beginAssessment {
+    background: rgb(25,25,25);
+    width: calc(100%-1em);
+    display: block;
+    color: rgb(128,128,128);
+    border-radius: 20px;
+    padding: .5em;
+    text-decoration: none;
+}
+.balanceDude {
+    width: 25%;
+}
